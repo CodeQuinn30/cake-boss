@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+.card {
+    position:relative;
+    width:350px;
+    height:180px;
+    background:white;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow:0 35px 80px black;
+    transition:100px;
+}
+.card:hover{
+    height: 400px;
+}
+.imgBx
+{
+    position:absolute;
+    left:50%;
+    top:-50px;
+    transform:translateX(-50%);
+    height: 150px;
+    width:150px;
+    background :white;
+    border-radius:20px;
+    box-shadow:0 15px 50px grey;
+    overflow:hidden;
+    transition:0.5s;
+}
+.card:hover .imgBx{
+    width:190px;
+    height:190px;
+}
+.imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;;
+
+}
+.card .content{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details{
+    padding:40px;
+    text-align: center;
+    width:100%;
+    transition:0.5s; 
+    transform:translateY(170px);
+}
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+.card .content .details h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:grey;
+    line-height: 1.2rem;
+}
+.card .content .details h2 span{
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity:0.5;
+}
+.card .content .details .data{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.card .content .details .data h3{
+    font-size: 1rem;
+    color:grey;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+.card .content .details .data h3 span{
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity:0.6;
+}
+.card .content .details .actionBtn{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.card .content .details .actionBtn button {
+    padding:10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    font-weight: 500;
+    background:linear-gradient(60deg,blue, hotpink, lightblue);
+    color:white;
+    cursor:pointer;
+    text-decoration: none;
+}
+.card .content .details .actionBtn button:hover{
+    background:linear-gradient(45deg,pink,blue);
+    transition: 0.5s;
+}
+h4{
+    text-decoration: none;
+}
